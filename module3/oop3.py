@@ -42,7 +42,7 @@ class MyCustomException(Exception):
         self.__arg3 = arg3
 
     def __str__(self):
-        return f"This is customised error message: {self.__message}\narguments are: arg1: {self.__arg1}\narg2: {self.__arg2}\narg3: {self.__arg3}"
+        return f"This is customised error message: {self.__message}\narguments are:\nmessage:{self.__message}\narg1: {self.__arg1}\narg2: {self.__arg2}\narg3: {self.__arg3}"
 
 
 def raise_my_simple_exception():
